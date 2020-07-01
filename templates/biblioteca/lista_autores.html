@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en' dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>
+    Lista de Autores
+</title>
+
+<body>
+    <h1>Autores REgistrados </h1>
+    <table border="1">
+        <thead>
+            <th>Nombres</th>
+            <th>Nacionalidad</th>
+            <th>Accion</th>
+        </thead>
+        <tbody>
+           {% for a in autores %}
+            <tr>
+            <td> {{a.nombre}} </td>
+            <td> {{a.nacionalidad}}</td>
+            <td> <a href="#">Ver</a> </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+    </table>
+   
+   
+</body>
+
+
+</head>
+
+
+
+
+
+
+</html>
